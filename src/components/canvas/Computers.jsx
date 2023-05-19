@@ -22,7 +22,7 @@ const Computers = ({isMobile}) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.6 : 0.75}
-        position={[0, -3.25, -1.5]}
+        position={isMobile ? [0, -4, -1] : [0, -3.55, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -33,16 +33,21 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Add a listener for changes of the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
+    // Add a listener for changes of the isMobile state variable
     setIsMobile(mediaQuery.matches);
 
+    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     }
 
+    // Add the callback function to handle changes to the media query
     mediaQuery.addEventListener('change', handleMediaQueryChange);
 
+    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     }

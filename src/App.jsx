@@ -12,7 +12,6 @@ function App() {
         </div>
 
         <About />
-        <Experience />
         <Tech />
         <Works />
         <Feedbacks />

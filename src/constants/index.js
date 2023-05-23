@@ -15,9 +15,9 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  forkify,
+  newsletter,
+  chatbot,
   threejs,
   python,
   postman
@@ -199,33 +199,29 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ChatGPT Bot",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "ChatGPT Bot clone is implemented using only Vanilla JavaScript, HTML, CSS and OpenAI API. It can help you to write code, essays and just talk with you. The nice typing animation and GPT-like style makes the bot easy to use. Hosted with the help of Netlify and Render.",
     tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "restapi",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chatbot,
+    source_code_link: "https://github.com/madina0801/chatgpt-javascript",
   },
   {
-    name: "Job IT",
+    name: "Forkify",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application to browse through recipes, save them locally and even add your own. It was implemented with JavaScript using ES6 latest features. Modules bundled with Parcel.",
     tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
@@ -233,33 +229,33 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "parcel",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: forkify,
+    source_code_link: "https://github.com/madina0801/forkify",
   },
   {
-    name: "Trip Guide",
+    name: "Kindletter",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Newsletter that is aimed to spread positivity and sends a dose of motivation to its subscribers. Built with the Mailchimp API, Node.js and Express",
     tags: [
       {
-        name: "nextjs",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "html",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: newsletter,
+    source_code_link: "https://github.com/madina0801/kindletter",
   },
 ];
 

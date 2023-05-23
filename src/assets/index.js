@@ -27,6 +27,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import chatbot from "./chatbot.png";
+import forkify from "./forkify.png";
+import newsletter from "./newsletter.png";
+
 export {
   logo,
   backend,
@@ -54,4 +58,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  chatbot,
+  forkify,
+  newsletter
 };
